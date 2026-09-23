@@ -1,6 +1,10 @@
-# useless directories
-
+# ignore these directories
 books/
+
+#ignore these files 
+*.tar
+*.py
+*.sh
 
 # Prerequisites
 *.d

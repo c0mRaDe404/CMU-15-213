@@ -10,7 +10,7 @@ PROGRAMS = qtest
 all: $(PROGRAMS)
 
 # Linking rules
-qtest: qtest.o report.o console.o harness.o queue.o
+qtest: qtest.o queue.o report.o console.o harness.o queue.o
 	$(CC) $(LDFLAGS) -o $@ $^ $(LDLIBS)
 
 # Header dependencies

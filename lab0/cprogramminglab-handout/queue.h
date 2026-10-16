@@ -18,14 +18,11 @@
 /**
  * @brief Linked list element containing a string.
  *
- * You shouldn't change this struct.
  */
 typedef struct list_ele {
     /**
      * @brief Pointer to a char array containing a string value.
      *
-     * The memory for this string should be explicitly allocated and freed
-     * whenever an element is inserted and removed from the queue.
      */
     char *value;
 

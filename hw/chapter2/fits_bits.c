@@ -10,8 +10,9 @@ int
 fit_bits (int x, int n)
 {
 
-  int result = (unsigned)x << (32 - n);
-  result = result >> (32 - n);
+  int w = sizeof(int) << 3; 
+  int result = (unsigned)x << (w - n);
+  result = result >> (w - n);
 
   return !(x ^ result);
 }
